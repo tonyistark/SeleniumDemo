@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EELS_EndToEnd_Scripts_NewOceanProfile]">
+  <test name="Release04(failed)">
+    <classes>
+      <class name="release08_scripts_SignUp.Trident_1_3_SignupPage_Field_Accepts_Values_61973">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_3_SignupPage_Field_Accepts_Values_61973 -->
+      <class name="release08_scripts_SignUp.Trident_1_9_SignupPage_Complete_SignUp_61979">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_9_SignupPage_Complete_SignUp_61979 -->
+      <class name="release08_scripts_SignUp.Trident_1_5_SignupPage_Invalid_First_Name_61975">
+        <methods>
+          <include name="SignupPage_Invalid_First_Name"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_5_SignupPage_Invalid_First_Name_61975 -->
+      <class name="release08_scripts_SignUp.Trident_1_2_SignupPage_UI_Validations_61972">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_2_SignupPage_UI_Validations_61972 -->
+      <class name="release08_scripts_SignUp.Trident_1_4_SignupPage_Invalid_Email_Address_61974">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_4_SignupPage_Invalid_Email_Address_61974 -->
+      <class name="release08_scripts_SignUp.Trident_1_7_SignupPage_Leave_Field_Blank_61977">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_7_SignupPage_Leave_Field_Blank_61977 -->
+      <class name="release08_scripts_SignUp.Trident_1_8_SignupPage_Multiple_Field_Blank_61978">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_8_SignupPage_Multiple_Field_Blank_61978 -->
+      <class name="release08_scripts_SignUp.Trident_1_6_SignupPage_Invalid_Last_Name_61976">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="SignupPage_Invalid_Last_Name"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_6_SignupPage_Invalid_Last_Name_61976 -->
+      <class name="release08_scripts_SignUp.Trident_1_1_SignupPage_Field_Validations_61971">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- release08_scripts_SignUp.Trident_1_1_SignupPage_Field_Validations_61971 -->
+    </classes>
+  </test> <!-- Release04(failed) -->
+</suite> <!-- Failed suite [EELS_EndToEnd_Scripts_NewOceanProfile] -->

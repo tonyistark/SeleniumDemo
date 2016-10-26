@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="39074" started-at="2016-10-05T05:29:01Z" finished-at="2016-10-05T05:29:40Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="39074" started-at="2016-10-05T05:29:01Z" finished-at="2016-10-05T05:29:40Z">
+      <class name="r09_SignupandLogin_Chrome.Trident_Guest_Account_Logout_98970">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:r09_SignupandLogin_Chrome.Trident_Guest_Account_Logout_98970@2eee9593]" name="beforeMethod" is-config="true" duration-ms="30884" started-at="2016-10-05T10:59:01Z" finished-at="2016-10-05T10:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Guest_Account_Logout()[pri:0, instance:r09_SignupandLogin_Chrome.Trident_Guest_Account_Logout_98970@2eee9593]" name="Guest_Account_Logout" duration-ms="6019" started-at="2016-10-05T10:59:32Z" finished-at="2016-10-05T10:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Guest_Account_Logout -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:r09_SignupandLogin_Chrome.Trident_Guest_Account_Logout_98970@2eee9593]" name="afterMethod" is-config="true" duration-ms="2152" started-at="2016-10-05T10:59:38Z" finished-at="2016-10-05T10:59:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Guest_Account_Logout status=SUCCESS method=Trident_Guest_Account_Logout_98970.Guest_Account_Logout()[pri:0, instance:r09_SignupandLogin_Chrome.Trident_Guest_Account_Logout_98970@2eee9593] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- r09_SignupandLogin_Chrome.Trident_Guest_Account_Logout_98970 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="CARNIVAL" parallel="tests" thread-count="200">> --> 
+
+<suite name="EELS_EndToEnd_Scripts" > 
+
+<test name="IntegrationDemo">
+  <classes>
+        <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Invalid_Email_Address_85630"/>
+   </classes>
+</test> 
+
+  </suite>
+  

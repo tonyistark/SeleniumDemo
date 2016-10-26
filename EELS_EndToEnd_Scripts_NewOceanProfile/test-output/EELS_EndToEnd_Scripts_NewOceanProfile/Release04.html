@@ -1,0 +1,272 @@
+<html>
+<head>
+<title>TestNG:  Release04</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Release04</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 22 13:11:34 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>640 seconds (640214 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_5_SignupPage_Invalid_First_Name_61975.SignupPage_Invalid_First_Name()'><b>SignupPage_Invalid_First_Name</b><br>Test class: release08_scripts_SignUp.Trident_1_5_SignupPage_Invalid_First_Name_61975</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;login__error___2qC-t&quot;}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DD5B-D-1CFJWQ1&apos;, ip: &apos;10.221.1.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\RISHIA~1.GAR\AppData\Local\Temp\scoped_dir16064_15351}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2056ac3171b0222e40791bb1f1858108
+*** Element info: {Using=class name, value=login__error___2qC-t}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at application_Model.SignUpPageModel.loginError(SignUpPageModel.java:141)
+	at application_Controller.SignUpPageController.getLogInError(SignUpPageController.java:193)
+	at release08_scripts_SignUp.Trident_1_5_SignupPage_Invalid_First_Name_61975.SignupPage_Invalid_First_Name(Trident_1_5_SignupPage_Invalid_First_Name_61975.java:42)
+	at integration.testrail.Integration.main(Integration.java:33)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850646717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850646717'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;login__error___2qC-t&quot;}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DD5B-D-1CFJWQ1&apos;, ip: &apos;10.221.1.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\RISHIA~1.GAR\AppData\Local\Temp\scoped_dir16064_15351}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2056ac3171b0222e40791bb1f1858108
+*** Element info: {Using=class name, value=login__error___2qC-t}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at application_Model.SignUpPageModel.loginError(SignUpPageModel.java:141)
+	at application_Controller.SignUpPageController.getLogInError(SignUpPageController.java:193)
+	at release08_scripts_SignUp.Trident_1_5_SignupPage_Invalid_First_Name_61975.SignupPage_Invalid_First_Name(Trident_1_5_SignupPage_Invalid_First_Name_61975.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at integration.testrail.Integration.main(Integration.java:33)
+</pre></div></td>
+<td>27</td>
+<td>release08_scripts_SignUp.Trident_1_5_SignupPage_Invalid_First_Name_61975@256216b3</td></tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_6_SignupPage_Invalid_Last_Name_61976.SignupPage_Invalid_Last_Name()'><b>SignupPage_Invalid_Last_Name</b><br>Test class: release08_scripts_SignUp.Trident_1_6_SignupPage_Invalid_Last_Name_61976</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;login__error___2qC-t&quot;}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DD5B-D-1CFJWQ1&apos;, ip: &apos;10.221.1.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\RISHIA~1.GAR\AppData\Local\Temp\scoped_dir16012_15940}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 527c0450116282cc44689402af38b50f
+*** Element info: {Using=class name, value=login__error___2qC-t}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at application_Model.SignUpPageModel.loginError(SignUpPageModel.java:141)
+	at application_Controller.SignUpPageController.getLogInError(SignUpPageController.java:193)
+	at release08_scripts_SignUp.Trident_1_6_SignupPage_Invalid_Last_Name_61976.SignupPage_Invalid_Last_Name(Trident_1_6_SignupPage_Invalid_Last_Name_61976.java:42)
+	at integration.testrail.Integration.main(Integration.java:33)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2122256138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2122256138'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;login__error___2qC-t&quot;}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DD5B-D-1CFJWQ1&apos;, ip: &apos;10.221.1.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\RISHIA~1.GAR\AppData\Local\Temp\scoped_dir16012_15940}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 527c0450116282cc44689402af38b50f
+*** Element info: {Using=class name, value=login__error___2qC-t}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at application_Model.SignUpPageModel.loginError(SignUpPageModel.java:141)
+	at application_Controller.SignUpPageController.getLogInError(SignUpPageController.java:193)
+	at release08_scripts_SignUp.Trident_1_6_SignupPage_Invalid_Last_Name_61976.SignupPage_Invalid_Last_Name(Trident_1_6_SignupPage_Invalid_Last_Name_61976.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at integration.testrail.Integration.main(Integration.java:33)
+</pre></div></td>
+<td>19</td>
+<td>release08_scripts_SignUp.Trident_1_6_SignupPage_Invalid_Last_Name_61976@2a18f23c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_9_SignupPage_Complete_SignUp_61979.SignupPage_Complete_SignUp()'><b>SignupPage_Complete_SignUp</b><br>Test class: release08_scripts_SignUp.Trident_1_9_SignupPage_Complete_SignUp_61979</td>
+<td></td>
+<td>3</td>
+<td>release08_scripts_SignUp.Trident_1_9_SignupPage_Complete_SignUp_61979@23223dd8</td></tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_3_SignupPage_Field_Accepts_Values_61973.SignupPage_Field_Accepts_Values()'><b>SignupPage_Field_Accepts_Values</b><br>Test class: release08_scripts_SignUp.Trident_1_3_SignupPage_Field_Accepts_Values_61973</td>
+<td></td>
+<td>11</td>
+<td>release08_scripts_SignUp.Trident_1_3_SignupPage_Field_Accepts_Values_61973@357246de</td></tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_1_SignupPage_Field_Validations_61971.SignupPage_Field_Validations()'><b>SignupPage_Field_Validations</b><br>Test class: release08_scripts_SignUp.Trident_1_1_SignupPage_Field_Validations_61971</td>
+<td></td>
+<td>1</td>
+<td>release08_scripts_SignUp.Trident_1_1_SignupPage_Field_Validations_61971@649d209a</td></tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_4_SignupPage_Invalid_Email_Address_61974.SignupPage_Invalid_Email_Address()'><b>SignupPage_Invalid_Email_Address</b><br>Test class: release08_scripts_SignUp.Trident_1_4_SignupPage_Invalid_Email_Address_61974</td>
+<td></td>
+<td>11</td>
+<td>release08_scripts_SignUp.Trident_1_4_SignupPage_Invalid_Email_Address_61974@28f67ac7</td></tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_7_SignupPage_Leave_Field_Blank_61977.SignupPage_Leave_Field_Blank()'><b>SignupPage_Leave_Field_Blank</b><br>Test class: release08_scripts_SignUp.Trident_1_7_SignupPage_Leave_Field_Blank_61977</td>
+<td></td>
+<td>6</td>
+<td>release08_scripts_SignUp.Trident_1_7_SignupPage_Leave_Field_Blank_61977@d7b1517</td></tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_8_SignupPage_Multiple_Field_Blank_61978.SignupPage_Multiple_Field_Blank()'><b>SignupPage_Multiple_Field_Blank</b><br>Test class: release08_scripts_SignUp.Trident_1_8_SignupPage_Multiple_Field_Blank_61978</td>
+<td></td>
+<td>2</td>
+<td>release08_scripts_SignUp.Trident_1_8_SignupPage_Multiple_Field_Blank_61978@16c0663d</td></tr>
+<tr>
+<td title='release08_scripts_SignUp.Trident_1_2_SignupPage_UI_Validations_61972.SignupPage_UI_Validations()'><b>SignupPage_UI_Validations</b><br>Test class: release08_scripts_SignUp.Trident_1_2_SignupPage_UI_Validations_61972</td>
+<td></td>
+<td>2</td>
+<td>release08_scripts_SignUp.Trident_1_2_SignupPage_UI_Validations_61972@6adca536</td></tr>
+</table><p>
+</body>
+</html>

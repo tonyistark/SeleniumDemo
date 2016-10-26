@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="r09_SignupandLogin_Chrome.Trident_Guest_Account_Logout_98970"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_Correct_EmailAddress_IncorrectPassword_99031"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_Email_Address_IncorrectandInvalid_99029"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_EmailAddress_Incorrect_99032"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_EmailAddress_Not_Registered_99030"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_Enter_Email_with_RememberMe_99033"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_HomeScreen_99036"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_Login_PassAndRememberMe_Check_99035"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_Login_with_Email_address_99027"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_Login_without_RememberMe_99034"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_Only_Password_99028"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Login_Page_ValidateUI_99026"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Profile_change_Password_98975"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Profile_change_Password_DataMismatch_Error_98976"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Profile_change_UserName_Duplicate_Email_98974"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Profile_change_UserName_EmailValidation_98972"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_Profile_change_UserName_Incorrect_Email_98973"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Blank_Field_Validation_98982"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Complete_SignUp_98983"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Field_Validations_98978"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Invalid_Email_Address_98979"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Invalid_First_Name_98980"/>
+      <class name="r09_SignupandLogin_Chrome.Trident_SignupPage_Invalid_Last_Name_98981"/>
+   </classes>
+  </test> 
+</suite> 

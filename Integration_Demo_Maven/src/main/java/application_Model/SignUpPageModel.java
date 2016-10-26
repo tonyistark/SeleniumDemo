@@ -103,7 +103,7 @@ public class SignUpPageModel {
 
  }
  public WebElement ocean(){
-        return IResourceConstant.CURRENT_BROWSER.findElement(By.xpath("//div[contains(text(), 'O·C·E·A·N' )]"));
+        return IResourceConstant.CURRENT_BROWSER.findElement(By.xpath("//div[contains(text(), ' ' )]"));
 
  }
  public WebElement myCompass(){

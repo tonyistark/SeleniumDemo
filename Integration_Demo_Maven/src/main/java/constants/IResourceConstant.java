@@ -39,7 +39,7 @@ public class IResourceConstant {
 			else
 				if(browser.equals("PhantomJS"))
 				{
-					PhantomJsDriverManager.getInstance().setup();
+					PhantomJsDriverManager.getInstance();
 					DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
 
 					CURRENT_BROWSER = new PhantomJSDriver(capabilities);

@@ -2,6 +2,7 @@ package constants;
 
 
 import io.github.bonigarcia.wdm.PhantomJsDriverManager;
+import net.anthavio.phanbedder.Phanbedder;
 import org.apache.commons.compress.utils.IOUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +11,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -47,12 +47,10 @@ public class IResourceConstant {
 				if(browser.equals("PhantomJS"))
 				{
 					//PhantomJsDriverManager.getInstance().setup();
+					File phantomjs = Phanbedder.unpack();
 					Path path = Paths.get("phantomjs.exe");
 					DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
-					File f = new File (path.toString());
-					if (!f.exists()) {
-						System.setProperty(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,f.getAbsolutePath());
-					}
+					capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomjs.getAbsolutePath());
 
 
 					CURRENT_BROWSER = new PhantomJSDriver(capabilities);

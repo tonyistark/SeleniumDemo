@@ -51,7 +51,7 @@ public class IResourceConstant {
 					DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
 					File f = new File (path.toString());
 					if (!f.exists()) {
-						System.setProperty("phantomjs.binary.path",f.getAbsolutePath());
+						System.setProperty(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,f.getAbsolutePath());
 					}
 
 

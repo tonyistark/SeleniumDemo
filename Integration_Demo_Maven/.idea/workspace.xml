@@ -68,8 +68,8 @@
       <file leaf-file-name="IResourceConstant.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/constants/IResourceConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -720,12 +720,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Trident_SignupPage_Invalid_Email_Address_85630 - 2016.10.26 at 14h 08m 05s.xml">
-      <configuration name="Trident_SignupPage_Invalid_Email_Address_85630" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Trident_SignupPage_Invalid_Email_Address_85630 - 2016.10.26 at 14h 21m 21s.xml">
-      <configuration name="Trident_SignupPage_Invalid_Email_Address_85630" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Trident_SignupPage_Invalid_Email_Address_85630 - 2016.10.26 at 14h 22m 41s.xml">
       <configuration name="Trident_SignupPage_Invalid_Email_Address_85630" configurationId="TestNG" />
     </history-entry>
@@ -748,6 +742,12 @@
       <configuration name="Trident_SignupPage_Invalid_Email_Address_85630" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Trident_SignupPage_Invalid_Email_Address_85630 - 2016.10.27 at 10h 28m 25s.xml">
+      <configuration name="Trident_SignupPage_Invalid_Email_Address_85630" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Trident_SignupPage_Invalid_Email_Address_85630 - 2016.10.27 at 11h 10m 02s.xml">
+      <configuration name="Trident_SignupPage_Invalid_Email_Address_85630" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Trident_SignupPage_Invalid_Email_Address_85630 - 2016.10.27 at 11h 12m 49s.xml">
       <configuration name="Trident_SignupPage_Invalid_Email_Address_85630" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1201,8 +1201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/constants/IResourceConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="221">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

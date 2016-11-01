@@ -27,7 +27,7 @@ public class IResourceConstant {
 	//public static final WebDriver CURRENT_BROWSER = new FirefoxDriver();
 	//public static final WebDriver CURRENT_BROWSER = new ChromeDriver();
 		public static  WebDriver CURRENT_BROWSER = null;
-		private static String PHANTOMJS_BINARY;
+
 		
 
 		public IResourceConstant(String browser)
@@ -44,21 +44,15 @@ public class IResourceConstant {
 					CURRENT_BROWSER = new FirefoxDriver();
 				}
 			else
-				if(browser.equals("PhantomJS"))
-				{
-					//PhantomJsDriverManager.getInstance().setup();
-					//File phantomjs = Phanbedder.unpack();
-					Path path = Paths.get("phantomjs.exe");
-					String binary = System.getProperty("phantomjs.binary");
-					DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
+				if(browser.equals("PhantomJS")) {
+					String binary = System.getProperty("phantomjs.binary");         ///access the phantomjs.binary property exposed by phantomjs-maven-plugin
 					capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
-
 
 					CURRENT_BROWSER = new PhantomJSDriver(capabilities);
 				}
 				else
 					{
-					  	DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+                        DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 					   capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
 					   true); 
 					  

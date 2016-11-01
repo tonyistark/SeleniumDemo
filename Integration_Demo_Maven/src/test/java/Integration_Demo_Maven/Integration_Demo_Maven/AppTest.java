@@ -53,7 +53,7 @@ public class AppTest {
 	     Controller.maximizeURL();        
 	    // Controller.waitForLoad();
 	      //Log.info("Implicit Wait applied on portal for 10 seconds");
-	      Controller.switchFrame();
+	      //Controller.switchFrame();
 	      
 	      //Log.info("Driver switched to correct frame");
 	}

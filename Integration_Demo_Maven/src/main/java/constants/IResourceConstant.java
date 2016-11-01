@@ -47,10 +47,11 @@ public class IResourceConstant {
 				if(browser.equals("PhantomJS"))
 				{
 					//PhantomJsDriverManager.getInstance().setup();
-					File phantomjs = Phanbedder.unpack();
+					//File phantomjs = Phanbedder.unpack();
 					Path path = Paths.get("phantomjs.exe");
+					String binary = System.getProperty("phantomjs.binary");
 					DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
-					capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomjs.getAbsolutePath());
+					capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
 
 
 					CURRENT_BROWSER = new PhantomJSDriver(capabilities);

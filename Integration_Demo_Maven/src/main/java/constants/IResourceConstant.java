@@ -46,6 +46,7 @@ public class IResourceConstant {
 			else
 				if(browser.equals("PhantomJS")) {
 					String binary = System.getProperty("phantomjs.binary");         ///access the phantomjs.binary property exposed by phantomjs-maven-plugin
+					DesiredCapabilities capabilities = DesiredCapabilities.phantomjs();
 					capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
 
 					CURRENT_BROWSER = new PhantomJSDriver(capabilities);
